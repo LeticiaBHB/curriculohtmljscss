@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contato</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./stylecontato.css">
+</head>
+<body>
+    <header>
+        <img src="./img/logo pp.png"
+            alt="logo: pato com ramos em formato redondo, uma pena do lado direito e outra do lado" width="90"
+            height="80">
+        <h1>
+            Leticia Heloisa Bini Haiduk
+        </h1>
+        <nav>
+            <ol class="nave">
+                    <a href="Inicio.html" target="_self"> Inicio</a>
+                    <a href="contato.html" target="_parent"> Contatos</a>
+            </ol>
+        </nav>
+    </header>
+    <main>
+        <header>
+            <h2>
+                CONTATO 
+            </h2>
+        </header>
+    <form method="post" action="http://localhost:3000/enviar-email"><br/>
+        <input type="text" name="q" placeholder="nome" required/><br/>
+        <input type="tel" name="tel" placeholder="(xx)xxxxx-xxxx" required/><br>
+        <input type="email" name="email" placeholder="email" autocomplete="off" required/><br/>
+        <p>Digite a idade do animal: </p><input type="number" name="idade" placeholder="Idade" min="0" max="100"/><br/>
+        Urgência <input type="range" name="urgencia" min="0" max="100" step="0.1"/><br/>
+        <input type="checkbox" name="dia-da-semana" value="2"/>Segunda-feira
+        <input type="checkbox" name="dia-da-semana" value="4"/> Quarta-feira
+        <input type="checkbox" name="dia-da-semana" value="6"/> Sexta-feira
+        <input type="radio" name="horário" value="Manhã"> Manhã
+        <input type="radio" name="horário" value="tarde"> Tarde
+        <input type="radio" name="horário" value="Noite"> Noite <br/>
+        <select name="Cidade">
+            <option value=""> Selecione o estilo do atendimento: </option>
+            <option value="">Clínica</option>
+            <option value="Contenda">Hospital</option>
+            <option value="Curitiba">Domiciliar</option>
+            <option value="Consultoria Online">Consultoria Online</option>
+        </select>
+        <input list="assunto" name="assunto">
+        <datalist id="assunto">
+            <option value="Clínica de Aves"></option>
+            <option value="Manejo e Bem estar Animal"></option>
+            <option value="Consultoria Ambiental"></option>
+        </datalist>
+        <br/>
+        <textarea name="mensagem" cols="60" rows="10"> Digite </textarea>
+        <button type="reset">Limpar</button>
+        <button type="submit">Enviar</button>
+    </form>
+    <script>
+        var nome = window.prompt('qual seu nome?')
+        window.alert ('seja bem vindo!!!  ' + nome + ':D')
+    </script>
+    </main>
+</body>
+</html>

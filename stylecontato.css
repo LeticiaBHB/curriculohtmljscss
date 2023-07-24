@@ -1,0 +1,67 @@
+html {
+    color: rgb(91, 66, 18);
+    background-color: rgb(242, 224, 202);
+    background-image: url("./img/camaleão3.jpeg");
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: top;
+    background-size: cover;
+    font-family: cursive;
+    font-size: 1.2rem;
+}
+
+@font-face {
+    font-family: 'Sunny Sanday';
+    src: url(./font/Sunny\ Sunday.ttf);
+}
+
+@font-face {
+    font-family: 'HandstaSignature';
+    src: url(./font/HandstaSignature.ttf);
+}
+main {
+
+    justify-content: center;
+    align-items: center;
+    min-height: 2;
+    margin: 0;
+}
+
+main {
+    background-color: rgb(250, 234, 214, 0.6);
+    text-align: center;
+}
+
+.nave {
+    display: inline;
+    left: 150px;
+    top: 10px;
+    position:fixed;
+    text-decoration: none;
+}
+
+h1 {
+    color: rgb(181, 165, 45);
+    font-family: 'HandstaSignature';
+    text-align: center;
+    font-size: 90px;
+    position: fixed;
+    top: -50px;
+    left: 500px;
+}
+
+h2 {
+    color: rosybrown;
+}
+
+header {
+    margin-top: 0%;
+    width: 100px;
+    height: 100px;
+    display: inline;
+}
+
+p {
+    text-indent: 3rem;
+    text-align: center;
+}

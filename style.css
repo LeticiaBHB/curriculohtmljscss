@@ -1,0 +1,206 @@
+html {
+    color: rgb(91, 66, 18);
+    background-color: rgb(242, 224, 202);
+    background-image: url("./img/camaleão2.jpeg");
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: top;
+    background-size: cover;
+    font-family: cursive;
+    font-size: 1.2rem;
+}
+
+@font-face {
+    font-family: 'Sunny Sanday';
+    src: url(./font/Sunny\ Sunday.ttf);
+}
+
+@font-face {
+    font-family: 'HandstaSignature';
+    src: url(./font/HandstaSignature.ttf);
+}
+
+main {
+    background-color: rgb(250, 234, 214, 0.6);
+}
+
+.nave {
+    display: inline;
+    left: 150px;
+    top: 10px;
+    position:fixed;
+    text-decoration: none;
+}
+
+h1 {
+    color: rgb(181, 165, 45);
+    font-family: 'HandstaSignature';
+    text-align: center;
+    font-size: 90px;
+    position: fixed;
+    top: -50px;
+    left: 500px;
+}
+
+h2 {
+    color: rosybrown;
+}
+
+header {
+    margin-top: 0%;
+    width: 100px;
+    height: 100px;
+    display: inline;
+}
+
+.graduação {
+    text-indent: 2rem;
+    color: rgb(35, 93, 74);
+    font-family: sans-serif;
+}
+
+.ensino {
+    color: rgb(32, 101, 101);
+}
+
+.estudos {
+    color: rgb(32, 101, 101);
+    letter-spacing: -1px;
+}
+
+main p {
+    text-indent: 3rem;
+}
+
+a:active {
+    text-decoration: none;
+    color: rgb(42, 31, 15)e;
+    cursor: progress;
+}
+
+a:visited {
+    color: rgb(120, 106, 85);
+}
+
+.blocos {
+    margin: 5px;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 170px;
+    height: 200px;
+    padding: 5px;
+    margin: 2px;
+    text-align: center;
+}
+
+.box-azul {
+    background-color: aqua;
+    border: 1px dotted #36eded;
+    border-width: 5px;
+    border-radius: 100px;
+    border-top-left-radius: 50px;
+}
+
+.box-vermelho {
+    background-color: rgba(229, 107, 107, 0.968);
+    border: 4px dashed #ff35164f;
+    border-width: 5px;
+    border-radius: 100px;
+    border-top-left-radius: 50px;
+}
+
+.box-amarelo {
+    background-color: rgb(255, 255, 0);
+    border: 2px double #e6e629;
+    border-width: 5px;
+    border-radius: 100px;
+    border-top-left-radius: 50px;
+}
+
+.sobre {
+    width: 400px;
+    height: 400px;
+    display: inline-block;
+
+}
+footer{
+    text-align: center;
+}
+
+/*imagens*/
+
+.content {
+    height: 500px;
+    width: 500px;
+    border-radius: 30px;
+    overflow: hidden;
+    position: absolute;
+    top: 115%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    transform: rotate(7deg);
+}
+
+.navegation {
+    position: absolute;
+    bottom: 60px;
+    left: 60%;
+    top: 190%;
+    transform: translate(-50%);
+    display: flex;
+    transform: rotate(7deg);
+}
+
+.bar {
+    width: 70px;
+    height: 17px;
+    border: 2px solid #fff;
+    margin: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.bar:hover {
+    background-color: #fff;
+}
+
+input {
+    display: none;
+}
+
+.slides {
+    display: flex;
+    width: 500%;
+    height: 100%;
+}
+
+.slide {
+    width: 20%;
+    transition: .6s;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+#slide1:checked~.s1 {
+    margin-left: 0;
+}
+
+#slide2:checked~.s1 {
+    margin-left: -20%;
+}
+
+#slide3:checked~.s1 {
+    margin-left: -40%;
+}
+
+#slide4:checked~.s1 {
+    margin-left: -60%;
+}
+
+#slide5:checked~.s1 {
+    margin-left: -80%;
+}
